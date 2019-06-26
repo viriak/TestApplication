@@ -67,10 +67,10 @@ public class ResultAdapter  extends
             matchHolder.match_home_score.setText(String.valueOf(result.getScore().getHome()));
             matchHolder.match_away_score.setText(String.valueOf(result.getScore().getAway()));
             if(mScreen_match==1) {
-                if (result!=null && result.getScore()!=null && result.getScore().getWinner().equals("home")) {
+                if (result!=null && result.getScore()!=null && result.getScore().getWinner()!=null && result.getScore().getWinner().equals("home")) {
                     matchHolder.match_home_score.setTextColor(ContextCompat.getColor(context, R.color.colorWinner));
                 } else {
-                    if (result.getScore()!=null && result.getScore().getWinner().equals("away"))
+                    if (result.getScore()!=null && result.getScore().getWinner()!=null && result.getScore().getWinner().equals("away") )
                         matchHolder.match_away_score.setTextColor(ContextCompat.getColor(context, R.color.colorWinner));
                 }
             }
