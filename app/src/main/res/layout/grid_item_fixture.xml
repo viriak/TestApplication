@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="0dp"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:padding="0dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:weightSum="100"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="25">
+
+            <TextView
+                android:id="@+id/match_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="65"
+                android:maxLines="1"
+                android:text="New Text"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="CHAMPIONS LEAGUE" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/match_venue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="65"
+                    android:maxLines="1"
+                    android:text="Stanford Bridge"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textSize="12sp"
+                    />
+                <TextView
+                    android:id="@+id/match_separator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="65"
+                    android:maxLines="1"
+                    android:text="|"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textSize="12sp"
+                    />
+                <TextView
+                    android:id="@+id/match_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="65"
+                    android:maxLines="1"
+                    android:text="Sep 12, 2017 at 2000"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textSize="12sp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="75">
+            <TextView
+                android:id="@+id/match_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="65"
+                android:gravity="center"
+                android:padding="5dp"
+                android:maxLines="1"
+                android:text="New Text"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="12sp"
+                android:background="@color/colorAlert"
+                android:textColor="@color/colorWhite"
+                tools:text="POSTPONED" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="170sp"
+            android:layout_height="105sp"
+            android:gravity="center_horizontal"
+            android:weightSum="100"
+            android:layout_marginTop="1dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="24">
+            <TextView
+                android:id="@+id/match_local_team"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="65"
+                android:maxLines="1"
+                android:text="Chelsea"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/match_away_team"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="65"
+                android:maxLines="1"
+                android:layout_marginTop="20dp"
+                android:text="Qarabag"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="20sp"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="74">
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorGray"
+                />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:id="@+id/match_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="65"
+                    android:layout_gravity="center"
+                    android:maxLines="1"
+                    android:text="12"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textSize="46sp"
+                    />
+
+                <TextView
+                    android:id="@+id/match_day_of_the_week"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="65"
+                    android:maxLines="1"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:text="SUN"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textSize="16sp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+</LinearLayout>

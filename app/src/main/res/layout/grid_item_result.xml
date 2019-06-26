@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="0dp"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:padding="0dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:weightSum="100"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="25">
+
+            <TextView
+                android:id="@+id/match_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="65"
+                android:maxLines="1"
+                android:text="New Text"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="CHAMPIONS LEAGUE" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/match_venue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="65"
+                    android:maxLines="1"
+                    android:text="New Text"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textSize="12sp"
+                    />
+                <TextView
+                    android:id="@+id/match_separator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="65"
+                    android:maxLines="1"
+                    android:text="|"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textSize="12sp"
+                    />
+                <TextView
+                    android:id="@+id/match_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="65"
+                    android:maxLines="1"
+                    android:text="Sep 12, 2017 at 2000"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textSize="12sp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="75">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="1dp"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="170sp"
+            android:layout_height="105sp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="1dp">
+
+            <TextView
+                android:id="@+id/match_league2"
+                android:layout_width="160dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:text="PRUEBA TEXTO"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:id="@+id/subtitle_info"
+                android:layout_width="160dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="-7dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:text="El mejor artículo posible para tí"
+                android:textSize="10sp"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
